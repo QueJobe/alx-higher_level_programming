@@ -1,0 +1,74 @@
+The ``0-add_integer`` module
+============================
+
+Using ``add_integer``
+---------------------
+
+First import ``add_integer`` from ``0-add_integer`` module:
+::
+
+    >>> add_integer = __import__("0-add_integer").add_integer
+
+Use case test 1:
+::
+
+    >>> add_integer(2, 2)
+    4
+
+Use case test 2 to test argument be default value 98:
+::
+
+    >>> add_integer(0)
+    98
+
+Use case test 3 to check if it allows negative numbers:
+::
+
+    >>> add_integer(-1, 1)
+    0
+
+    >>> add_integer(-1, -1)
+    -2
+
+Use case test 4 to check float numbers:
+::
+
+    >>> add_integer(1.33, 1)
+    2
+
+Use case test 5 when non float and non ints are used:
+::
+
+    >>> add_integer("1", 1)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer(1, "1")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+Use case test 6 when float infinity is passed:
+::
+
+    >>> add_integer(float('inf'), 1)
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
+
+Use case test 7 ValueError when float val is passed:
+::
+
+    >>> add_integer(float('val'), 1)
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float VaL to integer
+
+Use case test 8 TypeError when no argument is passed:
+::
+
+    >>> add_integer()
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
