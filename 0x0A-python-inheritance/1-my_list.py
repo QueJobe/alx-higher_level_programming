@@ -12,4 +12,4 @@ class Mylist(list):
 
 if __name__ = "__main__":
     import doctest
-    doctest.testfile("test/1-my_list.txt")
+    doctest.testfile("tests/1-my_list.txt")
