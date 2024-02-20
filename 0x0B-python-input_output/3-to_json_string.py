@@ -3,6 +3,8 @@
 """Module for json representation of an string"""
 
 
+import json
+
 
 def to_json_string(my_obj):
     """json function """
