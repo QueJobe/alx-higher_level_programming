@@ -7,6 +7,8 @@ class Mylist(list):
     """Mylist class body"""
 
     def print_sorted(self):
+        """Mothod tp print sorted list"""
+
         print(sorted(self))
 
 
