@@ -2,7 +2,7 @@
 """Module t write object to a file"""
 
 
-inmport json
+import json
 
 
 def save_to_json_file(my_obj, filename):
