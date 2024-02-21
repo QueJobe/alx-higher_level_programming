@@ -9,5 +9,6 @@ def load_from_json_file(filename):
         Args:
             filename - file name argumment
     """
-    with open(filename, encoding="utf-8") as file_loaded:
-        return json.load(file+loaded)
+    with open(filename, "r") as file:
+        obj = json.load(file)
+        return obj
