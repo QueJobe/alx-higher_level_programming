@@ -67,3 +67,8 @@ class Rectangle(Base):
         """function to find area of reactangle"""
         area = self.width * self.height
         return area
+
+    def display(self):
+        """Print rectangle with # symbol"""
+        for _ in range(self.height):
+            print("#" * self.width)
