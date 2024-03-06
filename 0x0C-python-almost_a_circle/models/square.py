@@ -33,7 +33,7 @@ class Square(Rectangle):
                 elif count == 2:
                     self.x = arg
                 elif count == 3:
-                    self.y == arg
+                    self.y = arg
                 else:
                     continue
         elif len(kwargs) > 0:
